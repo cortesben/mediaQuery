@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { WindowRefService } from './window-ref.service';
+import { MediaQuery } from './app.mediaQuery.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +17,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [WindowRefService, MediaQuery],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
